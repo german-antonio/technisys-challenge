@@ -16,5 +16,8 @@
     "url": "https://github.com/german-antonio/technysis-challenge/issues"
   },
   "homepage": "https://github.com/german-antonio/technysis-challenge#readme",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^8.3.1"
+  }
 }
