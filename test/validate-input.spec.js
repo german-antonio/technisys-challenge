@@ -9,15 +9,21 @@ describe("SERVICE validate-input UNIT TESTS", () => {
   it("Should throw an error on non-numeric values", () => {
     expect(() => {
       validateInput("2");
-    }).to.throw(TypeError, 'Input must be a number');
+    }).to.throw(TypeError);
   });
 
   it("Should throw an error on out of range values", () => {
     expect(() => {
       validateInput(1);
-    }).to.throw('Input must be between 2 and 100000');
+    }).to.throw();
     expect(() => {
       validateInput(100001);
-    }).to.throw('Input must be between 2 and 100000');
+    }).to.throw();
+  });
+
+  it("Should throw an error on non integer numbers", () => {
+    expect(() => {
+      validateInput(5.3);
+    }).to.throw();
   });
 });
