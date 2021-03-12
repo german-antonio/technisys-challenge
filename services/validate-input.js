@@ -4,7 +4,7 @@
  * @param {*} input The input to validate
  */
 function validateInput(input) {
-  if (typeof input !== 'number') {
+  if (typeof input !== 'number' || isNaN(input)) {
     throw new TypeError('Input must be a number');
   }
   if (input < 2 || input > 100000) {
