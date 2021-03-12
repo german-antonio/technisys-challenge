@@ -10,11 +10,8 @@ const getPrimeNumbers = require(path.join(
   "get-prime-numbers"
 ));
 
-console.log("\n-- Technysis code challenge --\n".cyan.bold);
-console.log(
-  "\nGet a descending list of prime numbers starting from a max number\n".cyan
-    .bold
-);
+console.log("\n---- Technysis code challenge ----\n".cyan.bold);
+console.log("\nGet a descending list of prime numbers starting from a max number\n".cyan.bold);
 
 /**
  * Prompt the user for a number between 2 and 100000, then print
@@ -27,7 +24,7 @@ console.log(
         {
           type: "number",
           name: "maxNumber",
-          message: "Please type a number: ".white.bold + "(ctrl+C to exit) ".gray.dim,
+          message: "Please type a number: ".white.bold + "(ctrl+C to exit)".gray.dim,
         },
       ]);
 
