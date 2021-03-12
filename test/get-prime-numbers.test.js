@@ -3,11 +3,7 @@ const expect = require("chai").expect;
 const path = require("path");
 
 /* Services */
-const getPrimeNumbers = require(path.join(
-  process.cwd(),
-  "services",
-  "get-prime-numbers"
-));
+const getPrimeNumbers = require(path.join(process.cwd(), "services", "get-prime-numbers"));
 const isPrime = require(path.join(process.cwd(), "services", "is-prime"));
 
 describe("getPrimeNumbers SERVICE UNIT TESTS", () => {
