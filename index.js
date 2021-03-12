@@ -13,6 +13,11 @@ const getPrimeNumbers = require(path.join(
 console.log("\n---- Technysis code challenge ----\n".cyan.bold);
 console.log("\nGet a descending list of prime numbers starting from a max number\n".cyan.bold);
 
+// This throws an npm error on windows
+process.on('SIGINT', () => {
+  process.exit(0);
+});
+
 /**
  * Prompt the user for a number between 2 and 100000, then print
  * a descending list of all prime numbers starting from it
