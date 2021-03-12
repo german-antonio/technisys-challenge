@@ -39,7 +39,7 @@ console.log('\n-- Technysis code challenge --\n'.cyan.bold);
       }
       process.exit(0);
     } catch (error) {
-      console.error(error.message);
+      console.dir(error.message);
       process.exit(1);
     }
   });
