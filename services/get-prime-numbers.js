@@ -9,7 +9,7 @@ const isPrime = require(path.join(process.cwd(), 'services', 'is-prime'));
  * @param {Number} topNumber The max number in the range to print
  * @returns {Number[]} An array of prime numbers
  */
-function getPrimeNumbers(topNumber = 0) {
+function getPrimeNumbers(topNumber) {
   const result = [];
   for (let currNumber = topNumber; currNumber > 1; currNumber--) {
     if (isPrime(currNumber)) {
