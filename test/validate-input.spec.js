@@ -1,14 +1,14 @@
 /* Dependencies */
-const expect = require("chai").expect;
+const { expect } = require("chai");
 const path = require("path");
 
 /* Services */
 const validateInput = require(path.join(process.cwd(), "services", "validate-input"));
 
-describe("validateInput SERVICE UNIT TESTS", () => {
+describe("SERVICE validate-input UNIT TESTS", () => {
   it("Should throw an error on non-numeric values", () => {
     expect(() => {
-      validateInput("string");
+      validateInput("2");
     }).to.throw(TypeError, 'Input must be a number');
   });
 
