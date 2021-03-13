@@ -1,3 +1,5 @@
+'use strict';
+
 /* Dependencies */
 const { expect } = require("chai");
 const path = require("path");

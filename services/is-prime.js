@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * Checks if given number is prime
  * @param {Number} number The number to check

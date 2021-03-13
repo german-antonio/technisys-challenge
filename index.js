@@ -1,3 +1,5 @@
+'use strict';
+
 /* Dependencies */
 const { prompt } = require("inquirer");
 const path = require("path");

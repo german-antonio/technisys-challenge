@@ -1,3 +1,5 @@
+'use strict';
+
 /* Dependencies */
 const randomNumber = require("faker").random.number;
 const { randomPrime } = require("random-prime");

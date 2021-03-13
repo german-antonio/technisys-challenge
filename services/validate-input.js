@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * Validates that given input is of type number and within bounds.
  * Throws an error upon validation failure.
