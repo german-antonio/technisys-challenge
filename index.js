@@ -13,7 +13,17 @@ const getPrimeNumbers = require(path.join(
 console.log("\n---- Technysis code challenge ----\n".cyan.bold);
 console.log("\nGet a descending list of prime numbers starting from a max number\n".cyan.bold);
 
-// This throws an npm error on windows
+if (process.platform === "win32") {
+  // Gracefully exit on windows
+  const readLine = require("readline").createInterface({
+    input: process.stdin,
+    output: process.stdout
+  });
+  readLine.on("SIGINT", () => {
+    process.emit("SIGINT");
+  });
+}
+
 process.on('SIGINT', () => {
   process.exit(0);
 });
@@ -30,14 +40,14 @@ process.on('SIGINT', () => {
           type: "number",
           name: "maxNumber",
           message: "Please type a number: ".white.bold + "(ctrl+C to exit)".gray.dim,
-        },
+        }
       ]);
 
-      const numbers = getPrimeNumbers(maxNumber);
+      const primeNumbers = getPrimeNumbers(maxNumber);
       console.log(`Prime numbers below ${maxNumber} are:`.green.bold);
-      let printNumbers = '';
 
-      for (const number of numbers) {
+      let printNumbers = '';
+      for (const number of primeNumbers) {
         printNumbers += `${number}, `
       }
       console.log(printNumbers.slice(0, -2).yellow);
