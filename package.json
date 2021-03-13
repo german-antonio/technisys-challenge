@@ -1,7 +1,7 @@
 {
-  "name": "technysis-challenge",
+  "name": "technisys-challenge",
   "version": "1.0.0",
-  "description": "Code challenge resolution for a job application at Technysis",
+  "description": "Code challenge resolution for a job application at Technisys",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/german-antonio/technysis-challenge.git"
+    "url": "git+https://github.com/german-antonio/technisys-challenge.git"
   },
   "author": "German Antonio Magaña <german@tiralinea.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/german-antonio/technysis-challenge/issues"
+    "url": "https://github.com/german-antonio/technisys-challenge/issues"
   },
-  "homepage": "https://github.com/german-antonio/technysis-challenge#readme",
+  "homepage": "https://github.com/german-antonio/technisys-challenge#readme",
   "dependencies": {},
   "devDependencies": {
     "chai": "^4.3.3",

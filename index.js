@@ -10,7 +10,7 @@ const getPrimeNumbers = require(path.join(
   "get-prime-numbers"
 ));
 
-console.log("\n---- Technysis code challenge ----\n".cyan.bold);
+console.log("\n---- Technisys code challenge ----\n".cyan.bold);
 console.log("\nGet a descending list of prime numbers starting from a max number\n".cyan.bold);
 
 if (process.platform === "win32") {

@@ -1,2 +1,2 @@
-# technysis-challenge
-Code challenge resolution for a job application at Technysis
+# Technisys code challenge
+Code challenge resolution for a job application at Technisys
